@@ -1,0 +1,355 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Blue.">
+	<meta name="author" content="rosesause">
+    <meta property="og:site_name" content="Meat Vault">
+    <title>MeatVault</title>
+    <link rel="icon" href="https://www.mspfa.com/images/ico.png"> <!-- Perfectly Generic Icon Courtesy of heyitskane -->
+    <link id="script-css" type="text/css" rel="stylesheet" href="/MeatVault/mspfa.css">
+    <style>
+        @import url("https://pipe.miroware.io/5ddefa4c56a97834b15a15e3/mobile.css");
+
+.heart {
+    background-image: url(https://pipe.miroware.io/5ddefa4c56a97834b15a15e3/trollmcdonalds/mcdonalds.png) !important;
+}
+
+nav .heart{
+  margin: 2px 6px 0 6px;
+}
+
+.fav.unlit {
+	background-image: url("https://pipe.miroware.io/5ddefa4c56a97834b15a15e3/trollmcdonalds/grayheart.png");
+}
+
+.fav.lit {
+	background-image: url("https://pipe.miroware.io/5ddefa4c56a97834b15a15e3/trollmcdonalds/heart.png");
+}
+
+img[src="/images/heart.png"] {
+    background: url(https://pipe.miroware.io/5ddefa4c56a97834b15a15e3/trollmcdonalds/heart.png) no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+img[src="/images/pages.png"] {
+    background: url(https://pipe.miroware.io/5ddefa4c56a97834b15a15e3/trollmcdonalds/pages.png) no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+img[src="/images/storyicon.png"] {
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+body {
+  background-color: #110f16;
+  color: #ffffff;
+}
+
+#info .spoiler {
+  background-color: #353535;
+}
+
+.spoiler {
+  background-color: #0a090d;;
+}
+
+#info > span > .spoiler.open {
+	background-color: #353535;
+}
+#info > span > .spoiler.closed {
+	background-color: #1f1d21;
+}
+
+
+#dialog {
+	border: 1px solid #1f1d21;
+	background-color: #353535;
+}
+
+#dialog > div:nth-child(1) {
+	background-color: #1f1d21;
+}
+
+.p1 header .um {
+  width: 0;
+  height: 0;
+}
+
+.p1 header .umcontainer {
+	height: 100px;
+}
+
+.mspfalogo {
+	border-right-color: #110f16;
+    background-color: #110f16;
+}
+
+.p1 header{
+	width: auto;
+    height: auto;
+}
+
+.p1 header .mspfalogo {
+  background-image: url("https://pipe.miroware.io/5ddefa4c56a97834b15a15e3/trollmcdonalds/troll%20mcdonalds.png");
+	min-width: 400px;
+    height: 100px;
+    border-right: 0;
+	background-color: transparent;
+}
+
+.p1 header .umcontainer {
+    width: 400px;
+    margin: auto;
+}
+
+nav {
+	background-color: #110f16;
+	margin: 3px 3px 3px 3px;
+}
+
+#main {
+	background-color: #110f16;
+}
+
+#container {
+    background-color: #1f1d21;
+}
+
+#slide {
+    background-color: #353535;
+    margin-bottom: 7px;
+}
+
+.footlinks a {
+ color: #9952e9;
+}
+
+
+button, input.major[type="button"], input.major[type="submit"], input.major[type="reset"] {
+	border-color: #48434d #1f1d21 #1f1d21 #48434d ;
+	background-color: #353535;
+}
+button:enabled:active, input.major[type="button"]:enabled:active, input.major[type="submit"]:enabled:active, input.major[type="reset"]:enabled:active {
+	border-color: #48434d #1f1d21 #1f1d21 #48434d ;
+border-color: #1f1d21 #48434d #48434d #1f1d21 ;
+}
+button, input.major[type="button"], input.major[type="submit"], input.major[type="reset"] {
+	background-color: #353535;
+}
+button:disabled, input.major[type="button"]:disabled, input.major[type="submit"]:disabled, input.major[type="reset"]:disabled {
+	background-color: #cccccc;
+}
+
+#info > span > .spoiler > div:first-child > input, #latestpages > span > .spoiler > div:first-child > input[type="button"] {
+    background-color: #353535!important;
+    border: 1px solid #110f16!important;
+    border-radius: 3px;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 2px 2px 2px 2px;
+    outline: none !important;
+}
+
+a:link {
+    color: #9952e9;
+}
+
+a:visited {
+    color: #9e9c16;
+}
+
+.rust{
+  color: rgb(153, 0, 0);
+}
+
+.bronze{
+  color: rgb(162, 82, 3);
+}
+
+.gold{
+  color: rgb(161, 161, 0);
+}
+
+.iron{
+  color: rgb(98, 98, 98);
+}
+
+.olive{
+  color: rgb(65, 102, 0);
+}
+
+.teal{
+  color: rgb(0, 130, 130);
+}
+
+.cobalt{
+  color: rgb(0, 65, 130);
+}
+
+.indigo{
+  color: rgb(0, 21, 130);
+}
+
+.purple{
+  color: rgb(68, 10, 127);
+}
+
+.violet{
+  color: rgb(106, 0, 106);
+}
+
+.fuchsia{
+  color: rgb(153, 0, 77);
+}
+
+#txtSubmit {
+	color: #ffffff;
+	border: 4px rgb(103, 58, 183) solid;
+	background-color: #000000;
+	font-family: Courier;
+	font-size: 20px;
+	width: 75%;
+	font-weight: bold;
+	padding: 5px 10px;
+	margin: 0 8px 8px 0px;
+	outline: none;
+}
+
+#btnSubmit {
+	border: 4px rgb(103, 58, 183) solid;
+	color: #ffffff;
+	background-color: #000000;
+	font-family: Courier;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 2px 15px;
+	border-radius: 0px;
+	outline: none;
+}
+
+
+#btnSubmit:focus {
+	border-color: #1f1d21 #48434d #48434d #1f1d21 ;
+background-color:#333333;
+}
+
+
+.p77-93 nav {
+    background-color: #1D1015;
+}
+
+.p77-93 #main {
+    background-color: #1D1015;
+}
+
+.p77-93 body {
+    background-color: #1D1015;
+}
+
+.p77-93 #container {
+    background-color: #54131A;
+}
+
+.p77-93 #slide {
+    background-color: #791D21;
+}
+
+.p77-93 #info > span > .spoiler {
+    background-color: #54131A;
+}
+
+.p77-93 #txtSubmit {
+    border: 4px rgb(255, 0, 0) solid;
+}
+
+.p77-93 #btnSubmit {
+    background-color: #791D21;
+    border-color: #833131 #54131A #54131A #833131;
+}
+.p77-93 #info > span > .spoiler > div:first-child > input, #latestpages > span > .spoiler > div:first-child > input[type="button"] {
+    background-color: #791D21;
+}
+    </style>
+</head>
+
+<body>
+    <div id="main">
+    <header>
+        <nav>
+				<a href="http://www.mspfa.com/" style="color: #ffffff;">MSPFA Home</a>
+				<span class="vbar">|</span>
+				<a href="http://www.mspaintadventures.com/" target="_blank" style="color: #ffffff;">MSPA</a>
+				<div class="heart"></div>
+				<a href="https://trollmcds.mspfa.com/" style="color: #9952e9;">Troll McDonald's</a>
+                <span class="vbar">|</span>
+                <a href="https://mspfa.com/?s=39046&p=1" style="color: #fc0303;">entropyghost</a>
+                <div class="heart"></div>
+				<a href="https://discord.gg/k9GQJJBrVr" target="_blank" style="color: #fffa36;">Discord</a>
+				<div class="heart"></div>
+                <a href="https://twitter.com/rosesause" style="color: #00ffff;">Twitter</a>
+				<span class="vbar">|</span>
+				<a href="https://rosesause.carrd.co/" target="_blank" style="color: #b0003b;">Carrd</a>
+			</nav>
+    </header>
+    <div id="container">
+        <div id="slide">
+            <div id="command">
+                <span>==></span>
+            </div>
+            <div id="content">
+                <span>
+                    <br>
+                    <iframe src = "MeatVault.html" width = "650" height = "450" style="border:none;" overflow="hidden;">
+                    </iframe>
+                    <br>
+                    <br>
+                    <div class="spoiler"><div>
+                        READ ME FIRST!!!!
+                        <br>
+                        <br>
+                        Controls: Click on things to interact with them. WASD to move. Press 1, 2, and 3 to warp to the different locations. Also no mobile support sorry :/
+                        <br>
+                        <br>
+                        tldr at bottom.
+                        <br>
+                        <br>
+                        Hey, rosesause here. You know, the creator of this wonderful mess. I wanted to make something a little different. I thought it’d be a good idea to make an interactive walkaround in the style of those like 3 ones from Homestuck proper. It wasn’t. I made one before for my, now discontinued, fan adventure Parastuck. I even made a sorta working Sylladex type deal in the same vein, which i have yet to release the demo. Don't worry I’m still trying to get that one out by… Well not christmas anymore but soonish. There's some videos of that on my twitter if you're curious on what that is. Anywho, this thing got way too convoluted and messy for its own good. I ended up rewriting almost all the code for it at least 3 times. All my original plans for it were to just have some simple puzzles and once you complete them all you can leave the MEAT VAULT. I lost sight of that pretty fast. Ambition got the better of me and I started biting off more than I could chew. What’s shown above isn’t even all that I made, there is so much that was scrapped or was just out right unplayable. So here’s what I did make. Have some fun with it. Updates will continue as they had before and I probably will never make another walkaround. This page will be moved off of the adventure after the next update. I will archive this page somehow after that though, so don’t worry this won’t get lost in the sands of time.
+                        <br>
+                        <br>
+                        PS Updates and other shit will probably slow soon. It won’t be this long ass hiatus again, trust me. But I’m going back to college and I won’t have much time to work on Troll McDonald’s or Entropy Ghost. While you wait why don’t you join the newly made <a href="https://discord.gg/a4XQJvx6yt">discord server</a>! It’s great it’s got me and… Well just me at the moment, but I’m sure at least like one of you will join.
+                        <br><br>
+                        PPSS I am thinking about possibly making a team to help out with making panels since I won’t have as much time to myself. If you're at all interested join the discord or look out on my twitter since I’ll probably post about it on both.
+                        <br><br>
+                        tldr; I wanted to make a walkaround for Troll McDonald’s, I failed. Here’s what I ended up with. Updates will continue as before and something like this may never happen. Also I made a discord if you feel inclined to join <a href="https://discord.gg/a4XQJvx6yt">CLICK ME</a>.
+                        </div></div>
+                </span>
+            </div>
+            <div id="foot">
+                <div id="links"></div>
+                <br>
+                <br>
+                <span id="prevlinks" style="display: none;">
+                    <span class="footlinks">
+                        <a id="startover">Start Over</a><span> | <a id="goback">Go Back</a></span>
+                    </span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <span id="gamelinks" style="display: none;">
+                    <span class="footlinks">
+                        <a id="savegame" href="javascript:void(0);">Save Game</a> | <a id="loadgame" href="javascript:void(0);">Load Game</a> | <a id="deletegame" href="javascript:void(0);">Delete Game Data</a>
+                    </span>
+                </span><br>
+                <br>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
